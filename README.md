@@ -7,7 +7,7 @@ In High Performqance computing (HPC), we did this with the *parallel research ke
 We, the people working on this repository, are exploring the following hypothesis:  Can we use an approach like the PRK to support the design of systems for quantum computing?   Can we create a set of *system probes* that will define the needs of programmers developing applications for quantum computers?  Based on experience with the PRK, we know that for each quantum research kernel (QRK) we need:
 
 * An informative or even ``catchy'' name
-* A brief statement what this kernel does
+* A brief statement of what this kernel does
 * A brief statement of what feature of a quantum computer this kernel stresses
 * A detailed defintion of the kernel itself
 * The input for the kernel
