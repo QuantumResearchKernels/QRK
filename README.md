@@ -15,3 +15,4 @@ We, the people working on this repository, are exploring the following hypothesi
 
 At this point, we have defined the following kernels
 
+* [Test](Kernels/test.md)
