@@ -12,7 +12,7 @@ $$ Cval[k] = e^{i\frac{k \pi}{N}} $$
 Load these onto the quantum computer as a set of $N$ qubits
 values.  Apply a constant phase shift of $\phi$.   Read them back onto the classical computer and verify that the results are:
 
-$$ Cval[k] = e^{i\frac{k \pi}{N}+\phi} $$
+$$ Cval[k] = e^{i(\frac{k \pi}{N}+\phi)} $$
 
 The metric for this kernel is the maximum value of $N$ such that the operation is correct.
 
