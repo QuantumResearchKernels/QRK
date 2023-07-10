@@ -34,6 +34,5 @@ The output is the input complex numbers with the phase shifted by the a constant
 
 This is the most basic need of a practical quantum computer; the ability to describe an input state on the classical computer and then encode the corresponding qubits on the quantum computer.  We need a symmetrical relation, that is, we need to encode the qubits (move them from the classical computer to the quantum computer) and the opposite (move them from the quantum computer to the classical computer).   
 
-Describe the rationale for this kernel both in terms of the system features it exposes but also the relevance it holds for applications.
 
 
