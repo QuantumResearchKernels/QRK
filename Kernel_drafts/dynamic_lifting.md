@@ -12,6 +12,14 @@ Stresses the ability to exchange classical and quantum control while maintaining
 
 ## Input data generation
 
+Teleportation:
+
+1. Prepare a Bell state and quantum state $\psi$.
+2. Perform a Bell measurement on $\psi$ and the first qubit in the Bell state, producing the bits $x$ and $y$.
+3. Send the qubits to the classical computer while retaining the coherence of the remaining qubit.
+4. Compute a correction on the classical computer to apply to the last qubit.
+5. Apply corrections on the quantum computer.
+6. Read out the result $\psi$.
 
 ## Output and Correctness
 
