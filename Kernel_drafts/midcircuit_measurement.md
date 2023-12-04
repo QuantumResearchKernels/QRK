@@ -1,12 +1,12 @@
-# Decision
+# Mid-Circuit Measurement
 
 Make a choice of which sub-circuit to execute from the result of a measurement on a qubit.
 
 ## Definition
 
-Define a sub-circuit A and sub-circuit B to be run on a set of qubits. Prepare a set of qubits. Prepare an additional qubit as the decision qubit.
+Define a sub-circuit A and sub-circuit B for multiple qubits. Encode state into those qubits. Prepare an additional qubit as the decision qubit.
 
-Measure the state of the decision qubit. Use the outcome of the observation to select which sub-circuit A or B is subsequently run.
+Action:  Measure the state of the decision qubit. Use the outcome of the observation to select which sub-circuit A or B is subsequently run.
 
 ## System features exposed
 
@@ -22,7 +22,7 @@ Run the test with the decision qubit prepared in three different ways:
 
 ## Output and Correctness
 
-Measure the duration from the end of the preparation to the beginning of the sub-circuit execution. The maximum of the three durations is the decision latency.
+Test:  Measure the duration from the end of the preparation to the beginning of the sub-circuit execution. The maximum of the three durations is the decision latency.
 
 ## Discussion
 
