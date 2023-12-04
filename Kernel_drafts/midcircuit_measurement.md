@@ -4,9 +4,9 @@ Make a choice of which sub-circuit to execute from the result of a measurement o
 
 ## Definition
 
-Define a sub-circuit A and sub-circuit B for multiple qubits. Encode state into those qubits. Prepare an additional qubit as the decision qubit.
+Define two $n$-qubit sub-circuits $A$ and $B$. Prepare an $n$-qubit state $\ket{\psi}$ . Prepare an additional qubit $d$ as the decision qubit.
 
-Action:  Measure the state of the decision qubit. Use the outcome of the observation to select which sub-circuit A or B is subsequently run.
+Action:  Measure the state of $d$. Use the outcome of the observation to select which sub-circuit $A$ or $B$ is subsequently run.
 
 ## System features exposed
 
@@ -14,7 +14,7 @@ This probes the latency introduced by needing to check the outcome of a measurem
 
 ## Input data generation
 
-Run the test with the decision qubit prepared in three different ways:
+Run the test with the decision qubit $d$ prepared in three different ways:
 
 1. in $\ket{0}$ state
 2. in $\ket{1}$ state
@@ -27,3 +27,9 @@ Test:  Measure the duration from the end of the preparation to the beginning of 
 ## Discussion
 
 This latency would impact the performance of algorithms of the Run-Until-Success type and quantum steering.
+
+How do we handle the timing?
+
+Do the values of $n$, $A$, $B$, and $d$ matter? 
+
+Should we test on additional $d$ qubits?
