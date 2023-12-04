@@ -6,7 +6,7 @@ Make a choice of which sub-circuit to execute from the result of a measurement o
 
 Define two $n$-qubit sub-circuits $A$ and $B$. Prepare an $n$-qubit state $\ket{\psi}$ . Prepare an additional qubit $d$ as the decision qubit.
 
-Action:  Measure the state of $d$. Use the outcome of the observation to select which sub-circuit $A$ or $B$ is subsequently run.
+Action:  Measure the state of $d$. Use the outcome of the observation to select which sub-circuit $A$ or $B$ is subsequently run on $\ket{\psi}$.
 
 ## System features exposed
 
