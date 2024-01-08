@@ -7,7 +7,7 @@ Quantum Fourier Transform (QFT) is the quantum analogue of the discrete Fourier 
 
 $$\textrm{QFT:}|x\rangle \rightarrow \frac{1}{\sqrt{N}}\sum_{k=0}^{N-1}\omega_N ^{x.k}|k\rangle,$$
 
-where $|x\rangle $ is a basis state.
+where $|x\rangle$ is a basis state.
 
 ## Discussion
 
