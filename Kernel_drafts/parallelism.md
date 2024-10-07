@@ -1,7 +1,7 @@
 
-# Parallel execution
+# LOCC execution
 
-Checks for an embarassingly parallel execution on a quantum system
+Checks for an embarassingly parallel execution on a quantum system (Local Operations and Classical Communication)
 
 ## Definition
 
