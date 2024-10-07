@@ -1,20 +1,17 @@
 
 # Encode
 
-Define a set of values on a classical computer.  Encode them as qubits and apply a simple operation (a phase shift).  Read them back onto the classical computer and verify that they have the correct results.
+Define a set of values on a classical computer.  Encode them as qubits and apply a simple operation (negate a bunch of qubits).  Read them back onto the classical computer and verify that they have the correct results.
 
 ## Definition
 
-Define $N$ complex numbers.
+Inputs: An $N$ bit nat $n \in \\{0,1\\}^N$, a subset of $S$ of indices less than $N$. 
 
-$$ Cval[k] = e^{i\frac{k \pi}{N}} $$
+Output: The nat $n$, with indices $S$ negated.
 
-Load these onto the quantum computer as a set of $N$ qubits
-values.  Apply a constant phase shift of $\phi$.   Read them back onto the classical computer and verify that the results are:
+Load $n$ onto the quantum computer as a set of $N$ qubits.  Apply an $X$ gate to every qubit in $S$. Read them back onto the classical computer and verify that the appropriate bits have been negated.
 
-$$ Cval[k] = e^{i(\frac{k \pi}{N}+\phi)} $$
-
-The metric for this kernel is the maximum value of $N$ such that the operation is correct.
+OLD: The metric for this kernel is the maximum value of $N$ such that the operation is correct. (Still relevant?)
 
 ## System features exposed
 
@@ -22,13 +19,13 @@ Stresses the ability to move data between the classical and quantum computer. It
 
 ## Input data generation
 
-The input data is a set of complex numbers on the classical computer:
+The input data is a natural number on the classical computer:
 
-$$ Cval[k] = e^{i\frac{k \pi}{N}} $$
+$n \in \\{0,1\\}^N$
 
 ## Output and Correctness
 
-The output is the input complex numbers with the phase shifted by the a constant value, $\phi$.
+The nat $n$, with indices $S$ negated.
 
 ## Discussion
 
